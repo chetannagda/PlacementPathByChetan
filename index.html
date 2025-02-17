@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Roadmap</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            color: #e0e0e0;
+            background-color: #121212;
+            text-align: center;
+        }
+        h1 {
+            color: #00FF00;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .main-box {
+            width: 250px;
+            padding: 20px;
+            margin: 20px;
+            background-color: #2f2f2f;
+            border: 2px solid #444;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .main-box:hover {
+            background-color: #333;
+            border-color: #00FF00;
+        }
+        .main-box .title {
+            display: flex;
+            align-items: center;
+            font-size: 1.2em;
+            color: #00FF00;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .main-box .title img {
+            width: 44px;
+            height: 44px;
+            margin-right: 10px;
+        }
+        .main-box .toggle {
+            font-size: 20px;
+            color: #00FF00;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .sub-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+            width: 100%;
+        }
+        .sub-container a {
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Use the same text color */
+            display: block; /* Make it behave like a block element (button) */
+        }
+        
+        .sub-box {
+            background-color: #333;
+            border: 1px solid #444;
+            color: #ddd;
+            padding: 10px;
+            margin: 5px;
+            width: 180px;
+            border-radius: 5px;
+        }
+        .main-box.open .sub-container {
+            max-height: none;
+        }
+
+    
+
+        .sub-box:hover {
+            background-color: #00ff00; /* Bright Green */
+            border-color: #00ff00; /* Green Border */
+            color: black; /* Text color for contrast */
+            transform: translateX(10px);
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+        }
+
+        /* Adjust the spacing of High Level and Low Level */
+        .sub-container .sub-box {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Placement Roadmap</h1>
+    <div class="container">
+        <div class="main-box" id="coreJava" onclick="toggleSection('coreJava')">
+            <div class="title">
+                <img src="./assests/icons8-java-logo.svg" alt="Core Java Icon">
+                Core Java
+                <span class="toggle">↓</span>
+            </div>
+            <div class="sub-container">
+                <a href="https://youtu.be/-Fe0zk-F4OA?si=sfXMzvY7L1hEw5tT" target="_blank"><div class="sub-box">Spring Boot</div></a>
+                <a href="https://youtu.be/4aYvLz4E1Ts?si=S5bGy8_XHZm-FFwJ" target="_blank"><div class="sub-box">Multithreading</div></a>
+                <a href="https://youtube.com/playlist?list=PLd3UqWTnYXOmYSEr3FtL0WyRHq1XpLFy8&si=pcHub7B7N0W8Vrmx" target="_blank"><div class="sub-box">Concurrency</div></a>
+                <a href="https://youtu.be/NU_1StN5Tkk?si=hEGWceF6N4TZqtTy" target="_blank"></a><div class="sub-box">Design Patterns</div></a>
+                <a href="https://youtu.be/OQvOx5q0D2A?si=GR_ANOwg3KqwFmoi" target="_blank"></a><div class="sub-box">JVM Frameworks</div></a>
+            </div>
+        </div>
+        <div class="main-box" id="dsa" onclick="toggleSection('dsa')">
+            <div class="title">
+                <img src="./assests/hierarchical-structure.png" alt="DSA Icon">
+                DSA
+                <span class="toggle">↓</span>
+            </div>
+            <div class="sub-container">
+                <a href="https://neetcode.io/roadmap" target="_blank"><div class="sub-box" style="background-color: #d22424;">DSA ROADMAP</div></a>
+                <a href="https://youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU&si=JU2w7sgkE3MpeHc2"><div class="sub-box" style="background-color: #d22424;">DSA PLAYLIST</div></a>
+                <div class="sub-box">Arrays</div>
+                <div class="sub-box">Linked List</div>
+                <div class="sub-box">Stacks</div>
+                <div class="sub-box">Queues</div>
+                <div class="sub-box">Graphs</div>
+                <div class="sub-box">Trees</div>
+                <div class="sub-box">Recursion</div>
+                <div class="sub-box">Dynamic Programming</div>
+                <div class="sub-box">Greedy Algorithms</div>
+                <a href="./assests/APNA COLLEGE ..pdf" target="_blank"><div class="sub-box" style="background-color: #00ff00d8;">DSA SHEET : COMPANY WISE : 375 Questions</div></a>
+<a href="./assests/50 Common Interview Questions.pdf" target="_blank"><div class="sub-box" style="background-color: #00ff00d8;">50 Common Interview Questions</div></a>
+<a href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/" target="_blank"><div class="sub-box" style="background-color: #00ff00d8;">Striver DSA Sheet</div></a>
+            </div>
+        </div>
+        <div class="main-box" id="systemDesign" onclick="toggleSection('systemDesign')">
+            <div class="title">
+                <img src="./assests/icons8-design-96.png" alt="System Design Icon">
+                System Design
+                <span class="toggle">↓</span>
+            </div>
+            <div class="sub-container">
+                <a href="https://youtube.com/playlist?list=PLA3GkZPtsafZdyC5iucNM_uhqGJ5yFNUM&si=2VnwIUskeCgYtxj0" target="_blank"><div class="sub-box">System Design Playlist</div></a>
+                <a href="https://youtu.be/dBmxNsS3BGE?si=4MDJlUjV4SKb-LGH" target="_blank"><div class="sub-box">Load Balancing</div></a>
+                <a href="https://youtu.be/xBTGln828Ps?si=QDsBAkn7hfTL1yq-" target="_blank"></a><div class="sub-box">Caching</div></a>
+                <a href=""></a><div class="sub-box">Scalability</div></a>
+                <a href=""></a><div class="sub-box">Microservices</div></a>
+                <a href=""></a><div class="sub-box line-container">Design Scalable Apps :<br> <br>High Level App <br>Low Level App</div></a>
+                
+            </div>
+        </div>
+        <div class="main-box" id="devOps" onclick="toggleSection('devOps')">
+            <div class="title">
+                <img src="./assests/icons8-devops-60.png" alt="DevOps Icon">
+                DevOps
+                <span class="toggle">↓</span>
+            </div>
+            <div class="sub-container">
+                <a href="https://youtu.be/9bSbNNH4Nqw?si=suyKGCIjFLhz1gJV" target="_blank"><div class="sub-box">Docker</div></a>
+                <a href="https://youtu.be/W04brGNgxN4?si=YrR1OAU2PiL7q7jS" target="_blank"><div class="sub-box">Kubernetes</div></a>
+                <a href=""><div class="sub-box">Apache Kafka</div></a>
+                <a href=""><div class="sub-box">CI/CD Pipelines</div></a>
+                <a href=""><div class="sub-box">Monitoring Tools</div></a>
+                <a href="https://youtu.be/4GwafiGsTUM?si=5DXkANgXjMx-aRqd" target="_blank"><div class="sub-box">Ansible</div></a>
+            </div>
+        </div>
+        <div class="main-box" id="csFundamentals" onclick="toggleSection('csFundamentals')">
+            <div class="title">
+                <img src="./assests/icons8-computer-science-64.png" alt="CS Fundamentals Icon">
+                CS Fundamentals
+                <span class="toggle">↓</span>
+            </div>
+            <div class="sub-container">
+                <a href="https://youtu.be/xw_OuOhjauw?si=jT6d0wBrta0R8HI5" target="_blank"><div class="sub-box">Operating System</div></a>
+                <div class="sub-box">OOPS</div>
+                <a href="https://youtube.com/playlist?list=PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx&si=cXoM5RxdGTtX3lNs" target="_blank"><div class="sub-box">Networking</div></a>
+                <div class="sub-box">DBMS
+                    <br> 
+                    <br>Core Theory<br>SQL<br>MongoDB
+                </div>
+            </div>
+        </div>
+        <div class="main-box" id="basics" onclick="toggleSection('basics')">
+            <div class="title">
+                <img src="./assests/icons8-knowledge-50.png" alt="Basics Icon">
+                Basics
+                <span class="toggle">↓</span>
+            </div>
+            <div class="sub-container">
+                <div class="sub-box" style="background-color: #d22424;">Next.js (1 Project)</div>
+                <div class="sub-box" style="background-color: #d22424;">Git</div>
+                <div class="sub-box" style="background-color: #d22424;">AI/ML</div>
+                <div class="sub-box" style="background-color: #d22424;">Prompt Engineering</div>
+                <div class="sub-box" style="background-color: #d22424;">Linux</div>
+                <div class="sub-box" style="background-color: #d22424;">Aptitude & Reasoning</div>
+                <div class="sub-box" style="background-color: #d22424;">Interview Preparation</div>
+                <div class="sub-box">No/Low Code</div>
+                <div class="sub-box">Blockchain</div>
+                <div class="sub-box">IoT</div>
+                <div class="sub-box">Cloud Computing</div>
+                <div class="sub-box">WordPress</div>
+                <div class="sub-box">MS Excel</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            const clickedSection = document.getElementById(sectionId);
+            const allSections = document.querySelectorAll('.main-box');
+            
+            // Close other sections and reset their toggle button
+            allSections.forEach(function(section) {
+                if (section !== clickedSection) {
+                    section.classList.remove('open');
+                    const toggle = section.querySelector('.toggle');
+                    toggle.innerHTML = '↓'; // Reset arrow to down
+                }
+            });
+
+            function downloadDSA() {
+                // Replace with the actual URL of your PDF file
+                const pdfUrl = 'https://example.com/dsa-sheet.pdf';
+                
+                // Create a new link element
+                const link = document.createElement('a');
+                link.href = pdfUrl;
+                link.download = 'dsa-sheet.pdf';
+                link.target = '_blank';
+                
+                // Simulate a click on the link
+                link.click();
+            }
+
+            // Toggle the clicked section
+            clickedSection.classList.toggle('open');
+            const toggle = clickedSection.querySelector('.toggle');
+            if (clickedSection.classList.contains('open')) {
+                toggle.innerHTML = '↑'; // Change arrow to up
+            } else {
+                toggle.innerHTML = '↓'; // Change arrow to down
+            }
+        }
+    </script>
+</body>
+</html>
